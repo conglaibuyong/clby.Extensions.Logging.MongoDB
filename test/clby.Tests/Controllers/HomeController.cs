@@ -19,7 +19,9 @@ namespace clby.Tests.Controllers
         public IActionResult Index()
         {
 
-            throw new Exception("aaa");
+            //throw new Exception("aaa");
+            _logger.LogInformation("info");
+            _logger.LogError("error");
 
             return this.Content("OK");
 
