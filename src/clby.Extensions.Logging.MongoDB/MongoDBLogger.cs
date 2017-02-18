@@ -134,6 +134,7 @@ namespace clby.Extensions.Logging.MongoDB
                 log.Add("Exception", exceptionString);
                 log.Add("CreateTime", DateTime.Now);
 
+                //效率不行啊，考虑先放内存，定时批量写入数据库
                 mdb
                     .GetCollection<BsonDocument>(string.Format("{0}_{1}", CollectionName, DateTime.Now.ToString("yyyyMM")))
                     .InsertOneAsync(log);
