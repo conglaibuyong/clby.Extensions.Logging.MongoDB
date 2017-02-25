@@ -38,12 +38,12 @@ namespace clby.Extensions.Logging.MongoDB
 
         public string Name { get; }
 
-        //static MongoDBLogger()
-        //{
-        //    var logLevelString = GetLogLevelString(LogLevel.Information);
-        //    _messagePadding = new string(' ', logLevelString.Length + _loglevelPadding.Length);
-        //    _newLineWithMessagePadding = Environment.NewLine + _messagePadding;
-        //}
+        static MongoDBLogger()
+        {
+            var logLevelString = GetLogLevelString(LogLevel.Information);
+            _messagePadding = new string(' ', logLevelString.Length + _loglevelPadding.Length);
+            _newLineWithMessagePadding = Environment.NewLine + _messagePadding;
+        }
 
         public MongoDBLogger(string name, Func<string, LogLevel, bool> filter, IMongoDBLoggerSettings settings)
         {

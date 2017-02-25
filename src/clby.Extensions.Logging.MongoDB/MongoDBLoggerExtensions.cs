@@ -7,6 +7,7 @@ namespace clby.Extensions.Logging
 {
     public static class MongoDBLoggerExtensions
     {
+        /*
         public static ILoggerFactory AddMongoDB(this ILoggerFactory factory)
         {
             return factory.AddMongoDB(includeScopes: false);
@@ -36,7 +37,8 @@ namespace clby.Extensions.Logging
             factory.AddProvider(new MongoDBLoggerProvider(filter, includeScopes));
             return factory;
         }
-
+        */
+        
         public static ILoggerFactory AddMongoDB(this ILoggerFactory factory, IMongoDBLoggerSettings settings)
         {
             factory.AddProvider(new MongoDBLoggerProvider(settings));

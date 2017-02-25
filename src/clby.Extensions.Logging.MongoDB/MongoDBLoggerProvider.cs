@@ -12,6 +12,7 @@ namespace clby.Extensions.Logging.MongoDB
         private readonly Func<string, LogLevel, bool> _filter;
         private IMongoDBLoggerSettings _settings;
 
+        /*
         public MongoDBLoggerProvider(Func<string, LogLevel, bool> filter, bool includeScopes)
         {
             if (filter == null)
@@ -25,6 +26,7 @@ namespace clby.Extensions.Logging.MongoDB
                 IncludeScopes = includeScopes,
             };
         }
+        */
 
         public MongoDBLoggerProvider(IMongoDBLoggerSettings settings)
         {
