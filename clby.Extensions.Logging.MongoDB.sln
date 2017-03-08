@@ -1,20 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5176676D-38DA-4F7F-8E7F-7FF703149FE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B594ABC5-7E80-4E73-9D53-73BFDE1BAEC5}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "clby.Extensions.Logging.MongoDB", "src\clby.Extensions.Logging.MongoDB\clby.Extensions.Logging.MongoDB.xproj", "{B20E5384-D1EE-42A9-AC14-90E4EEF39115}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2609CCE9-0241-4CFE-A1D8-81E6F983F4C7}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "clby.Tests", "test\clby.Tests\clby.Tests.xproj", "{EE71CCF0-56AD-45E8-9ABB-673E51CC596E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clby.Extensions.Logging.MongoDB", "src\clby.Extensions.Logging.MongoDB\clby.Extensions.Logging.MongoDB.csproj", "{B20E5384-D1EE-42A9-AC14-90E4EEF39115}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clby.Tests", "test\clby.Tests\clby.Tests.csproj", "{EE71CCF0-56AD-45E8-9ABB-673E51CC596E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
